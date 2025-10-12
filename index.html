@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced MIDI Keyboard Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            background-color: #1f1f1f;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .how-to-use, .about {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .how-to-use ol {
+            text-align: left;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Advanced MIDI Keyboard Simulator</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-to-use">How to Use</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/tag/advanced-midi-keyboard-simulator-v1" target="_blank">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bring MIDI to Life on Virtual Pianos</h1>
+                <p>A powerful desktop application that translates MIDI files into real-time keyboard presses for web-based virtual pianos.</p>
+                <a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/download/advanced-midi-keyboard-simulator-v1/Advanced.MIDI.Keyboard.Simulator.zip" class="cta-button">Download Now</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Advanced Piano Roll Visualizer</h3>
+                    <p>Watch notes scroll towards the keyboard in real-time, with a dynamic piano roll that highlights every key press and sustain.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Live MIDI Input</h3>
+                    <p>Connect your physical MIDI keyboard or controller to see your own playing visualized live within the application.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Playlist Management</h3>
+                    <p>Load multiple MIDI files, organize your playlist, and enjoy continuous playback with the auto-play next feature.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Musical Tools</h3>
+                    <p>Transpose MIDI playback to any key with a simple control, and adjust playback speed from 0.5x to 2.0x in real-time.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Custom Key Mapping</h3>
+                    <p>Open the intuitive key map editor to re-assign which keyboard key is triggered by any MIDI note.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>In-Depth Song Statistics</h3>
+                    <p>Analyze any MIDI file with detailed stats, including note count, duration, note density, velocity range, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-use" class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Download and extract the `Advanced.MIDI.Keyboard.Simulator.zip` from the link above.</li>
+                <li>Run the exe file. No installation is required.</li>
+                <li>Click "Add Files" to load one or more .mid files into the playlist.</li>
+                <li>Select a song from the playlist and click the "Play" button. A 3-second countdown will begin.</li>
+                <li>Quickly switch to your web browser and click on your virtual piano window (e.g., `virtualpiano.net`) to give it focus.</li>
+                <li>Watch and listen as the application plays the song perfectly!</li>
+            </ol>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About the Project</h2>
+            <p>This application was designed for musicians, learners, and hobbyists who want to visualize and listen to MIDI compositions on their favorite online piano platforms without needing physical hardware.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced MIDI Keyboard Simulator. All rights reserved.</p>
+        <p>Developed by <a href="https://github.com/ROCKYANDTHEPAWPATROL20" target="_blank">ROCKYANDTHEPAWPATROL20</a></p>
+        <p><a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator">View Project on GitHub</a></p>
+    </footer>
+</body>
+</html>
