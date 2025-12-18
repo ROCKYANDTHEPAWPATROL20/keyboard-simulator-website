@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced MIDI Keyboard Simulator</title>
+    <title>Advanced MIDI Keyboard Simulator | AI-Powered</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #121212;
@@ -45,6 +45,11 @@
             text-decoration: none;
             color: #ffffff;
             font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #007bff;
         }
         
         footer a {
@@ -55,6 +60,7 @@
         .hero {
             text-align: center;
             padding: 4rem 2rem;
+            background: linear-gradient(180deg, #121212 0%, #1a1a1a 100%);
         }
 
         .hero h1 {
@@ -65,20 +71,56 @@
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
+            color: #ccc;
+        }
+
+        /* Container for the two download buttons */
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
         }
 
         .cta-button {
+            display: inline-block;
             background-color: #007bff;
             color: #ffffff;
             padding: 1rem 2rem;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 300px; /* Fixed width for alignment */
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Special style for the AI button */
+        .cta-button.ai-version {
+            background: linear-gradient(45deg, #6610f2, #8540f5);
+            box-shadow: 0 0 15px rgba(102, 16, 242, 0.4);
+        }
+
+        .cta-button.ai-version:hover {
+            background: linear-gradient(45deg, #520dc2, #6f2cf3);
+            box-shadow: 0 0 20px rgba(102, 16, 242, 0.6);
+        }
+
+        .version-note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.2rem;
         }
 
         .features {
             padding: 4rem 2rem;
             text-align: center;
+            background-color: #181818;
         }
 
         .features-grid {
@@ -89,9 +131,16 @@
         }
 
         .feature-item {
-            background-color: #1f1f1f;
+            background-color: #252525;
             padding: 2rem;
             border-radius: 10px;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            border-color: #007bff;
         }
 
         .how-to-use, .about {
@@ -103,6 +152,13 @@
             text-align: left;
             display: inline-block;
             margin-top: 2rem;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        .how-to-use li {
+            margin-bottom: 1rem;
         }
 
         footer {
@@ -116,12 +172,13 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Advanced MIDI Keyboard Simulator</div>
+            <div class="logo">Advanced MIDI Simulator</div>
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-to-use">How to Use</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/tag/advanced-midi-keyboard-simulator-v1" target="_blank">Download</a></li>
+                <!-- Default link to latest release -->
+                <li><a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases" target="_blank">Releases</a></li>
             </ul>
         </nav>
     </header>
@@ -129,38 +186,51 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>The Ultimate MIDI Player for Roblox "Visual Pianos"</h1>
-                <p>The powerful desktop application for translating MIDI files into real-time keyboard presses in the Roblox game, "Visual Pianos".</p>
-                <a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/download/advanced-midi-keyboard-simulator-v1/Advanced.MIDI.Keyboard.Simulator.zip" class="cta-button">Download Now</a>
+                <h1>The Ultimate MIDI Player for Roblox</h1>
+                <p>The powerful desktop application for translating MIDI files into real-time keyboard presses in "Visual Pianos".<br>Now featuring Context-Aware AI.</p>
+                
+                <div class="hero-buttons">
+                    <!-- Original Version -->
+                    <div>
+                        <a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/download/advanced-midi-keyboard-simulator-v1/Advanced.MIDI.Keyboard.Simulator.zip" class="cta-button">Download Classic (v1.0)</a>
+                        <div class="version-note">Standard features, no AI required.</div>
+                    </div>
+
+                    <!-- AI Version -->
+                    <div>
+                        <a href="https://github.com/ROCKYANDTHEPAWPATROL20/Advanced-MIDI-Keyboard-Simulator/releases/download/advanced-midi-keyboard-simulator-AI/Advanced.MIDI.Keyboard.Simulator.zip" class="cta-button ai-version">✨ Download AI Edition (v2.0)</a>
+                        <div class="version-note">Includes Auto-Config, Chatbot & Smart Optimization.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2>Key Features</h2>
+            <h2>New & Core Features</h2>
             <div class="features-grid">
                 <div class="feature-item">
-                    <h3>Advanced Piano Roll Visualizer</h3>
-                    <p>Watch notes scroll towards the keyboard in real-time, with a dynamic piano roll that highlights every key press and sustain.</p>
+                    <h3>🤖 AI Auto-Configuration</h3>
+                    <p>New in v2.0! Click one button and the AI analyzes your song's density and speed to automatically set the perfect Transpose, Speed, and Anti-Lag settings.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Live MIDI Input</h3>
-                    <p>Connect your physical MIDI keyboard or controller to see your own playing visualized live within the application.</p>
+                    <h3>⚡ Smart Anti-Lag System</h3>
+                    <p>New "Max Polyphony" and "Key Dwell" controls ensure that even the most complex Black MIDI files play smoothly without crashing Roblox.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Playlist Management</h3>
-                    <p>Load multiple MIDI files, organize your playlist, and enjoy continuous playback with the auto-play next feature.</p>
+                    <h3>🎨 Custom Visualizer</h3>
+                    <p>Experience a smooth 60FPS piano roll. Customize note colors, background styles, and rounded corners via the new Style menu or by asking the AI!</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Musical Tools</h3>
-                    <p>Transpose MIDI playback to any key with a simple control, and adjust playback speed from 0.5x to 2.0x in real-time.</p>
+                    <h3>💬 Natural Language Control</h3>
+                    <p>Talk to the app! Type "Make it faster" or "Fix the lag" in the AI tab, and the application adjusts its own settings instantly.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Custom Key Mapping</h3>
-                    <p>Open the intuitive key map editor to re-assign which keyboard key is triggered by any MIDI note.</p>
+                    <h3>🎹 Live MIDI Input</h3>
+                    <p>Connect your physical MIDI keyboard or controller to play directly into the game with ultra-low latency.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>In-Depth Song Statistics</h3>
-                    <p>Analyze any MIDI file with detailed stats, including note count, duration, note density, velocity range, and more.</p>
+                    <h3>🛠️ Advanced Tools</h3>
+                    <p>Features Auto-Transpose for unmapped notes, Ghost Note filtering (min velocity), and a Panic Button to release stuck keys.</p>
                 </div>
             </div>
         </section>
@@ -168,19 +238,20 @@
         <section id="how-to-use" class="how-to-use">
             <h2>How to Use</h2>
             <ol>
-                <li>Download and extract the `Advanced.MIDI.Keyboard.Simulator.zip` from the link above.</li>
-                <li>Run the exe file. No installation is required.</li>
-                <li>Click "Add Files" to load one or more .mid files into the playlist.</li>
-                <li>Launch Roblox and join the game "Visual Pianos".</li>
-                <li>In the simulator, select a song from the playlist and click "Play". A 3-second countdown will begin.</li>
-                <li>Quickly switch to the Roblox game window to give it focus.</li>
-                <li>Watch and listen as the application plays the song perfectly in-game!</li>
+                <li>Download your preferred version (Classic or AI) from the buttons above.</li>
+                <li>Extract the `.zip` file. Run the `.exe` inside (No installation required).</li>
+                <li><strong>(AI Version Only):</strong> Ensure you have <a href="https://ollama.com" target="_blank" style="color:#007bff;">Ollama</a> installed if you want to use the AI features.</li>
+                <li>Drag and drop `.mid` files directly into the application playlist.</li>
+                <li>Go to the <strong>"AI Assistant"</strong> tab and click <strong>"✨ AI Auto-Configure"</strong> to optimize settings for the song.</li>
+                <li>Click <strong>"Play"</strong>. A countdown will begin.</li>
+                <li>Quickly switch to the Roblox "Visual Pianos" window to give it focus.</li>
+                <li>Enjoy the performance!</li>
             </ol>
         </section>
 
         <section id="about" class="about">
             <h2>About the Project</h2>
-            <p>This application was designed specifically for players of the Roblox game "Visual Pianos", allowing musicians, learners, and hobbyists to visualize and perform MIDI compositions in-game without needing physical hardware.</p>
+            <p>This application was designed specifically for players of the Roblox game "Visual Pianos", allowing musicians, learners, and hobbyists to visualize and perform complex MIDI compositions in-game without needing physical hardware. The new v2.0 update introduces local AI to make configuring complex songs effortless.</p>
         </section>
     </main>
 
